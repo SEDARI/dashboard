@@ -1,0 +1,5 @@
+<p>
+    <button md-button (click)="login()" *ngIf="!authenticationService.isLoggedIn">Login</button>
+    <button md-button (click)="logout()" *ngIf="authenticationService.isLoggedIn">Logout</button>
+</p>
+<p>{{message}}</p>
