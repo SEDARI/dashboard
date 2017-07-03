@@ -4,8 +4,8 @@ import {AppComponent}            from './app.component';
 import {AppRoutingModule}        from "./app-routing.module";
 import {HttpModule}              from "@angular/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations"
-import {MdToolbarModule}         from "@angular/material"
-import {MdButtonModule}          from "@angular/material"
+
+import {MdCardModule, MdCheckboxModule, MdToolbarModule, MdButtonModule} from "@angular/material"
 
 import {PageNotFoundComponent}          from "./pages/page-not-found/page-not-found.component";
 import {LoginComponent}                 from "./pages/login/login.component";
@@ -21,9 +21,12 @@ import {NerosComponent}                 from "./pages/neros/neros.component";
     imports: [
         BrowserModule,
         HttpModule,
+        // animation and material themes
         BrowserAnimationsModule,
         MdToolbarModule,
         MdButtonModule,
+        MdCardModule,
+        MdCheckboxModule,
 
         // own modules
         AppRoutingModule
