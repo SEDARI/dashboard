@@ -1,0 +1,22 @@
+<h1>Service Object Detail</h1>
+
+<md-card *ngIf="serviceobject">
+    <md-card-title> {{serviceobject.soID}}</md-card-title>
+    <md-card-content>
+        <p>
+            <!--<md-checkbox></md-checkbox>-->
+            <span class="status">
+                Status: {{serviceobject.public ? 'public':'private'}}
+            </span>
+            <span class="status">
+                 {{serviceobject.streams.length}} {{serviceobject.streams.length == 1 ? 'Stream':'Streams'}}
+            </span>
+            <button md-button *ngIf="serviceobject.gateway" (click)="navToGateway(serviceobject.gateway)">
+                {{serviceobject.gateway}}
+            </button>
+        </p>
+    </md-card-content>
+    <md-card-subtitle>
+        This is a subtitle
+    </md-card-subtitle>
+</md-card>
