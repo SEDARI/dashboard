@@ -18,6 +18,10 @@ import {NerosComponent} from "./pages/neros/neros.component";
  */
 const routes: Routes = [
     {
+        path: 'serviceobject/:soID',
+        component: ServiceObjectDetailComponent
+    },
+    {
         path: 'serviceobjects',
         component: ServiceObjectListComponent
     },
@@ -40,10 +44,6 @@ const routes: Routes = [
     {
         path: 'so404',
         component: ServiceObjectNotFoundComponent
-    },
-    {
-        path: 'serviceobject/:soID',
-        component: ServiceObjectDetailComponent
     },
     {
         path: '',
