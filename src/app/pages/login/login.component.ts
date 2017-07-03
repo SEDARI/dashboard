@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
 export class LoginComponent {
     message: string;
 
-    constructor(public authenticationService: AuthenticationService, public router: Router) {
+    constructor(public authenticationService: AuthenticationService, private router: Router) {
     }
 
     setMessage() {

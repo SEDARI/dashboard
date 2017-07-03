@@ -11,14 +11,21 @@ import {ObjectUnsubscribedError} from "rxjs/Rx";
 export class AuthenticationService {
     isLoggedIn: boolean = false;
     redirctUrl: string;
+    authorizationToken: string;
 
-    login(): Observable<boolean> {
+    login(): Observable<string> {
         // TODO Phil 13/05/17: add call to identity management system
-        return Observable.of(true).delay(2000).do(val => this.isLoggedIn = true);
+        return Observable.of('2932942f823b82ab34').delay(2000).do(token => {
+            this.isLoggedIn = true;
+            this.authorizationToken = token;
+        });
     }
 
-    logout(): Observable<boolean> {
-        return Observable.of(false).delay(2000).do(val => this.isLoggedIn = false);
+    logout(): Observable<void> {
+        return Observable.of(null).delay(2000).do(val => {
+            this.isLoggedIn = false;
+            this.authorizationToken = null;
+        });
     }
 
 }
