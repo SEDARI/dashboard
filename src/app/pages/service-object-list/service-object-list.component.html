@@ -1,0 +1,38 @@
+<h1>List of all Service Objects</h1>
+
+<h2 *ngIf="serviceObjectList">
+    You have {{serviceObjectList.length}} Service Objects
+</h2>
+
+<md-card *ngFor="let so of serviceObjectList; let last = last">
+    <md-card-title>
+        <button md-button class="app-button" (click)="navToServiceObject(so.soID)">
+            {{so.name}} (soID: {{so.soID}})
+        </button>
+    </md-card-title>
+    <md-divider></md-divider>
+    <md-card-content>
+        <p md-line>
+            <!--<md-checkbox></md-checkbox>-->
+            <span>
+                Status: {{so.public ? 'public':'private'}}
+            </span>
+            <md-divider class="vertical-divider"></md-divider>
+            <span>
+                 {{so.streams.length}} {{so.streams.length == 1 ? 'Stream':'Streams'}}
+            </span>
+            <a *ngIf="so.gateway">
+                <md-divider class="vertical-divider-right"></md-divider>
+                <button md-button (click)="navToGateway(so.gateway)">
+                    {{so.gateway}}
+                </button>
+            </a>
+        </p>
+    </md-card-content>
+    <md-card-subtitle>
+        {{so.description}}
+    </md-card-subtitle>
+
+    <!--todo remove this even though it's fancy.-->
+    <md-divider *ngIf="!last"></md-divider>
+</md-card>

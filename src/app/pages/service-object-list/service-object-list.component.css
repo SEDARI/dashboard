@@ -1,0 +1,25 @@
+/*
+ * Inherit font size from the md-card-title instead md-button
+*/
+.app-button {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*
+ * Usage:
+ * <md-divider class="vertical-divider"></md-divider>
+ */
+.vertical-divider {
+    border-top-width: 0;
+    border-right: 1px solid;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.vertical-divider-right {
+    border-top-width: 0;
+    border-right: 1px solid;
+    height: 100%;
+    margin-left: 10px;
+}
