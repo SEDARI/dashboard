@@ -1,0 +1,158 @@
+{
+    "data": [
+        "a2932942f823b82ab31",
+        "a2932942f823b82ab32",
+        "a2932942f823b82ab33"
+    ],
+    "a2932942f823b82ab31": {
+        "soID": "a2932942f823b82ab31",
+        "name": "Smart Home 1 Weather Sensors",
+        "description": "This Service Object holds all weather related sensors of Smart Home 1.",
+        "public": true,
+        "streams": [
+            {
+                "name": "Weatherboard",
+                "description": "The sensor that measures temperature, humidity and brightness of the Smart Home.",
+                "channels": [
+                    {
+                        "name": "Temperature Sensor outside the house",
+                        "type": "Number",
+                        "unit": "Grad Celsius"
+                    },
+                    {
+                        "name": "Temperature Sensor inside the house",
+                        "type": "Number",
+                        "unit": "Grad Celsius"
+                    },
+                    {
+                        "name": "Humidity Sensor in the bathroom",
+                        "type": "Number",
+                        "unit": "Relative Humidity"
+                    },
+                    {
+                        "name": "Brightness Sensor in the bedroom.",
+                        "type": "Number",
+                        "unit": "Lux"
+                    }
+                ]
+            },
+            {
+                "name": "Location Sensor",
+                "description": "The sensor that measures the location of the Smart Home.",
+                "channels": [
+                    {
+                        "name": "Latitude of the Smart Home",
+                        "type": "Number",
+                        "unit": "Degrees"
+                    },
+                    {
+                        "name": "Longitude of the Smart Home",
+                        "type": "Number",
+                        "unit": "Degrees"
+                    }
+                ]
+            }
+        ],
+        "gateway": "gatewaya2932942f823b82ab31"
+    },
+    "a2932942f823b82ab32": {
+        "soID": "a2932942f823b82ab32",
+        "name": "Smart Home 2 Weather Sensors",
+        "description": "This Service Object holds all weather related sensors of Smart Home 1.",
+        "public": true,
+        "streams": [
+            {
+                "name": "Weatherboard",
+                "description": "The sensor that measures temperature, humidity and brightness of the Smart Home.",
+                "channels": [
+                    {
+                        "name": "Temperature Sensor outside the house",
+                        "type": "Number",
+                        "unit": "Grad Celsius"
+                    },
+                    {
+                        "name": "Temperature Sensor inside the house",
+                        "type": "Number",
+                        "unit": "Grad Celsius"
+                    },
+                    {
+                        "name": "Humidity Sensor in the bathroom",
+                        "type": "Number",
+                        "unit": "Relative Humidity"
+                    },
+                    {
+                        "name": "Brightness Sensor in the bedroom.",
+                        "type": "Number",
+                        "unit": "Lux"
+                    }
+                ]
+            },
+            {
+                "name": "Location Sensor",
+                "description": "The sensor that measures the location of the Smart Home.",
+                "channels": [
+                    {
+                        "name": "Latitude of the Smart Home",
+                        "type": "Number",
+                        "unit": "Degrees"
+                    },
+                    {
+                        "name": "Longitude of the Smart Home",
+                        "type": "Number",
+                        "unit": "Degrees"
+                    }
+                ]
+            }
+        ]
+    },
+    "a2932942f823b82ab33": {
+        "soID": "a2932942f823b82ab33",
+        "name": "Smart Home 3 Weather Sensors",
+        "description": "This Service Object holds all weather related sensors of Smart Home 1.",
+        "public": false,
+        "streams": [
+            {
+                "name": "Weatherboard",
+                "description": "The sensor that measures temperature, humidity and brightness of the Smart Home.",
+                "channels": [
+                    {
+                        "name": "Temperature Sensor outside the house",
+                        "type": "Number",
+                        "unit": "Grad Celsius"
+                    },
+                    {
+                        "name": "Temperature Sensor inside the house",
+                        "type": "Number",
+                        "unit": "Grad Celsius"
+                    },
+                    {
+                        "name": "Humidity Sensor in the bathroom",
+                        "type": "Number",
+                        "unit": "Relative Humidity"
+                    },
+                    {
+                        "name": "Brightness Sensor in the bedroom.",
+                        "type": "Number",
+                        "unit": "Lux"
+                    }
+                ]
+            },
+            {
+                "name": "Location Sensor",
+                "description": "The sensor that measures the location of the Smart Home.",
+                "channels": [
+                    {
+                        "name": "Latitude of the Smart Home",
+                        "type": "Number",
+                        "unit": "Degrees"
+                    },
+                    {
+                        "name": "Longitude of the Smart Home",
+                        "type": "Number",
+                        "unit": "Degrees"
+                    }
+                ]
+            }
+        ]
+    }
+}
